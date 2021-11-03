@@ -3,4 +3,4 @@
 - [TexLive](https://www.tug.org/texlive/quickinstall.html)
 
 # Template References
-[Vanilla Template](https://github.com/sb2nov/resume)
+- [Vanilla Template](https://github.com/sb2nov/resume)
