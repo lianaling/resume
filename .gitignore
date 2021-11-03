@@ -2,3 +2,4 @@
 !*.tex
 !.gitignore
 *temp.tex
+!*.md
