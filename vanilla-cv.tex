@@ -86,6 +86,11 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% Own symbols
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\newcommand{\mytextsharp}{$^\sharp$}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -93,13 +98,19 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{figure}[htbp]
-\includegraphics[width=1.5cm]{profile-pic.jpg}
+%\begin{figure}[htbp]
+%\includegraphics[width=1.5cm]{profile-pic.jpg}
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%  \textbf{{\Large LIANA LING}} & Email : \href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}\\
+%  \href{http://github.com/lianaling/}{GitHub Profile} & Mobile : +60 17-280 1215 \\
+%\end{tabular*}
+%\end{figure}
+
+
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large LIANA LING}} & Email : \href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}\\
-  \href{http://github.com/lianaling/}{GitHub Profile} & Mobile : +60 17-280 1215 \\
+  \textbf{{\Large LIANA LING}} & Email: \href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}\\
+  \href{http://github.com/lianaling/}{A software engineering student's GitHub Profile} & Mobile: +60 17-280 1215 \\
 \end{tabular*}
-\end{figure}
 
 
 %-----------EDUCATION-----------------
@@ -110,7 +121,7 @@
 {Bachelor of Computer Science (Honours) in Software Engineering; CGPA: 3.9744}{Oct 2019 -- Oct 2022}
 \resumeSubSubheading{Foundation in Science; CGPA: 4.0000}{Sep 2018 -- Sep 2019}
 \resumeItemListStart
-\resumeItem{Skills Learnt}{C++, Java, Python, ASP.NET, SQL, HTML/CSS/Javascript}
+\resumeItem{Skills Learnt}{\CC, C\mytextsharp, Java, Python, ASP.NET, SQL, HTML/CSS/Javascript}
 \resumeItem{Languages}{Proficient in written/spoken Chinese and English; Conversational in Malay}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -173,6 +184,32 @@
 \resumeSubHeadingListEnd
 
 
+%-----------Projects-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading{\href{https://github.com/marcustut/fyp}{AI Automatic Slide Generator}}{Natural Language Processing}
+{Python, Jupyter Notebook, Markdown Language}{Oct 2021 -- present}
+\resumeItemListStart
+\resumeItem{Algorithm Implementation}{Summarising text, converting into markdown and generating slides}
+\resumeItemListEnd
+
+\resumeSubheading{\href{https://github.com/marcustut/summarize}{AI Text Summariser}}{Natural Language Processing}
+{Python, Jupyter Notebook}{Sep 2021 -- Oct 2021}
+\resumeItemListStart
+\resumeItem{Algorithm Implementation}{Researched and implemented 3 abstractive summarisation algorithms}
+\resumeItem{Experiment Design}{Designed an experiment and curated relevant dataset for algorithm comparison that eventually achieved 98/100 marks}
+\resumeItemListEnd
+
+\resumeSubheading{\href{https://github.com/lianaling/art-gallery-website}{Art Gallery Website}}{Web Development}
+{C\mytextsharp, ASP.NET, Vue, Tailwind CSS, HTML/CSS/Javascript}{May 2021 -- Oct 2021}
+\resumeItemListStart
+\resumeItem{Frontend Development}{Created 5+ pages using self-learned Tailwind CSS and Vue}
+\resumeItem{Backend Development}{Added button, target page and cross-page functionalities using C\mytextsharp}
+\resumeItem{Database Design}{Designed, documented and implemented SQL Server database schema}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
 %-----------Achievements-----------------
 \section{Achievements}
 \resumeSubHeadingListStart
@@ -209,7 +246,6 @@
 \resumeItem{Class Management}{Collected fees and printed learning materials for a class more than 15 people}
 \resumeItem{Coordination}{Communicated with and gave feedback to the school management and lecturers}
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %
