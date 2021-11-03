@@ -4,3 +4,4 @@
 
 # Template References
 - [Vanilla Template](https://github.com/sb2nov/resume)
+- [Bicolumn Template](https://www.latextemplates.com/template/stylish-cv)
