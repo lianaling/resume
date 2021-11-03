@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (September 10, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Stefano (https://www.kindoblue.nl)
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrlayer-scrpage} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{microtype} % To enable letterspacing
+\usepackage{hyperref}
+\usepackage[left=0.7in, right=0.7in]{geometry}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-2cm} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{2.5cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+%	FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\fontsize{11}{17}\selectfont % Letter spacing and font size
+
+\textls[150]{37, Jalan Anggerik Aranda 31/34 {\large\textperiodcentered} Kota Kemuning \\
+40460 Shah Alam {\large\textperiodcentered} Selangor {\large\textperiodcentered} Malaysia}\\ % Your mailing address
+{\Large\Letter} \textls[150]{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com} \ {\Large\Telefon}+60 17-280 1215} \\ % Your email address and phone number
+{\Large\ComputerMouse} {\href{https://github.com/lianaling}{github.com/lianaling}}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+%	HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\fontsize{36}{36}\selectfont\scshape\textls[200]{Liana Ling}} % Your name at the top
+
+\vspace{0.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+{\small Resourceful, responsible and punctual, I am looking forward to creating innovative quality software that facilitates business and societal processes to building a technological-driven future. I seek to bridge the gulf between human language and machine understanding in the natural language processing field.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{ Oct 2019 – Oct 2022}\\
+\gray University & \textbf{Tunku Adbul Rahman University College} \hfill Kuala Lumpur, Malaysia \\
+\gray Degree & \textbf{Bachelor of Computer Science (Honours) in Software Engineering}\\
+\gray Foundation & \textbf{Foundation in Science}\\
+\gray CGPA & \textbf{3.9744 (Degree), 4.0000 (Foundation)}\\
+%& Extra information about degree
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{May 2021 – Jun 2021}\\
+\gray Employer & \textbf{LS SMART MACHINERY (M) SDN BHD} \hfill Seri Kembangan, Malaysia\\
+\gray Job Title & \textbf{Junior Software Developer}\\
+& \textbf{\small Requirement Elicitation: }{\small Communicated and documented requirements from stakeholders} \\
+& \textbf{\small Project Reporting: }{\small Researched and produced competitor analysis and project costing} \\
+& \textbf{\small Database Design: }{\small Designed, documented and implemented PostgresSQL database schema} \\
+& \textbf{\small Backend Setup: } {\small Connected application to Stripe API using Golang and Fiber.ctx}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{ May 2020 – Nov 2021}\\
+\gray Employer & \textbf{RSBAITAI by Turcomp BMB SDN BHD} \hfill Work from home, Malaysia \\
+\gray Job Title & \textbf{Chinese-English Translator}\\
+& \textbf{\small Translation: }{\small Translated and proofread 80+ blog articles and 2 published books} \\
+& \textbf{\small Translation Management: }{\small Created a database using Excel Macros for article tracking}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l }
+Technical Skills &  C++, Java, Python, ASP.NET, SQL, HTML/CSS/Javascript \\
+Languages & Proficient in written/spoken Chinese and English; Conversational in Malay \\
+Certifications & Cisco Networking Academy CCNA Routing and Switching: Introduction to Networks\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Activities}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Jan 2021 – present}\\
+\gray Club & \textbf{Google Developer Student Club Tunku Adbul Rahman University College}\\
+\gray Position & \textbf{Marketing and Creative Lead}\\
+\gray Firm & \textbf{Google}\\
+& \textbf{\small Account Management: }{\small Interacted with and managed 5 social media accounts} \\
+& \textbf{\small Poster and Caption Design: }{\small Created event posters and relevant captions} \\
+& \textbf{\small Event Hosting: }{\small Hosted and facilitated the event Meet the Xperts: A Journey in the IT Industry} \\
+\end{tabularx}
+
+\end{center}
+
+\end{document}
