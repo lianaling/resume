@@ -19,6 +19,10 @@
 \usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage{color}
+\usepackage{xcolor}
+\usepackage{tgbonum}
+\usepackage[margin=1.4in]{geometry}
+\usepackage{setspace}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -30,10 +34,11 @@
 \hypersetup{breaklinks=true,%
 % pagecolor=white,%
 colorlinks=true,%
-linkcolor=cyan,%
-urlcolor=MyDarkBlue}
+linkcolor=MyBlue,%
+urlcolor=MyBlue}
 
-\definecolor{MyDarkBlue}{rgb}{0,0.0,0.45}
+
+\definecolor{MyBlue}{rgb}{0.25, 0.41, 0.88}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -60,7 +65,7 @@ urlcolor=MyDarkBlue}
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1: }{#2 \vspace{-2pt}}
   }
 }
 
@@ -68,7 +73,7 @@ urlcolor=MyDarkBlue}
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\footnotesize #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -76,13 +81,13 @@ urlcolor=MyDarkBlue}
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\footnotesize #3} & \textit{\footnotesize #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\footnotesize #1} & \textit{\footnotesize #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -103,7 +108,6 @@ urlcolor=MyDarkBlue}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -115,19 +119,20 @@ urlcolor=MyDarkBlue}
 %\end{tabular*}
 %\end{figure}
 
-
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large LIANA LING}} & Email: \href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}\\
+  \textbf{{\LARGE LIANA LING}} & Email: \href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}\\
   \href{http://github.com/lianaling/}{A software engineering student's GitHub Profile} & Mobile: \href{tel:+60172801215}{+60 17-280 1215} \\
 \end{tabular*}
-
 
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Tunku Adbul Rahman University College}{Kuala Lumpur, Malaysia}
-{Bachelor of Computer Science (Honours) in Software Engineering; CGPA: 3.9744}{Oct 2019 -- Oct 2022}
+{Bachelor of Computer Science (Honours) in Software Engineering;}{Oct 2019 -- Oct 2022}
+\begin{spacing}{0.4}
+  \colorbox{yellow}{\it\footnotesize CGPA: 3.9744}
+\end{spacing}
 \resumeSubSubheading{Foundation in Science; CGPA: 4.0000}{Sep 2018 -- Sep 2019}
 \resumeItemListStart
 \resumeItem{Skills Learnt}{\CC, C\mytextsharp, Java, Python, ASP.NET, SQL, HTML/CSS/Javascript}
@@ -222,8 +227,8 @@ urlcolor=MyDarkBlue}
 %-----------Achievements-----------------
 \section{Achievements}
 \resumeSubHeadingListStart
-\resumeSubItem{Tunku Adbul Rahman University College President's List certificates}{For GPA 3.9 and above}
-\resumeSubItem{Tunku Adbul Rahman University College Certificate in Soft Skills}{In foundation programme}
+\resumeSubItem{TARUC President's List certificates}{For GPA 3.9 and above}
+\resumeSubItem{TARUe Certificate in Soft Skills}{In foundation programme}
 \resumeSubItem{Malaysian University English Test (MUET)}{Band 5}
 \resumeSubItem{Nanjing University Translation in Practice Online Course Certificate}{Certificate of Completion}
 \resumeSubItem{Cisco Networking Academy CCNA Routing and Switching}{Introduction to Networks Course Completion Certificate}
@@ -239,7 +244,7 @@ Test Publication
 %-----------Activities-----------------
 \section{Activities}
 \resumeSubHeadingListStart
-\resumeSubheading{Google Developer Student Club Tunku Adbul Rahman University College}{Google}
+\resumeSubheading{Google Developer Student Club TARUC}{Google}
 {Marketing \& Creative Lead}{Jan 2021 -- Oct 2021}
 \resumeItemListStart
 \resumeItem{Account Management}{Interacted with and managed 5 social media accounts}
@@ -250,11 +255,11 @@ Test Publication
 \resumeSubheading{Programming League National 2020}{University of Malaya}
 {Participant}{29th Feb 2020}
 
-\resumeSubheading{Innovation and Prototyping Competition 2019}{Tunku Adbul Rahman University College}{Participant}{Feb 2019 -- Mar 2019}
+\resumeSubheading{Innovation and Prototyping Competition 2019}{TARUC}{Participant}{Feb 2019 -- Mar 2019}
 
-\resumeSubheading{Violin for Beginners Level 1, 2 and 3}{Tunku Adbul Rahman University College}{Participant}{Mar 2019 -- Dec 2019}
+\resumeSubheading{Violin for Beginners Level 1, 2 and 3}{TARUC}{Participant}{Mar 2019 -- Dec 2019}
 
-\resumeSubheading{Foundation in Science (Track A)}{Tunku Adbul Rahman University College}{Class Representative}{Sep 2018 -- Sep 2019}\
+\resumeSubheading{Foundation in Science (Track A)}{TARUC}{Class Representative}{Sep 2018 -- Sep 2019}\
 \resumeItemListStart
 \resumeItem{Class Management}{Collected fees and printed learning materials for a class more than 15 people}
 \resumeItem{Coordination}{Communicated with and gave feedback to the school management and lecturers}
