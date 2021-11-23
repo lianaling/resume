@@ -18,12 +18,13 @@
 \usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage{color}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 % \usepackage{tgbonum}
 \usepackage[sfdefault]{ClearSans} %% option 'sfdefault' activates Clear Sans as the default text font
 \usepackage[T1]{fontenc}
 \usepackage[margin=1.4in]{geometry}
 \usepackage{setspace}
+\usepackage{multirow}
 \usepackage[hidelinks]{hyperref}
 
 \input{glyphtounicode}
@@ -41,12 +42,15 @@
 
 % My Colours
 \definecolor{MyBlue}{rgb}{0.17, 0.27, 0.59}
+\definecolor{MyBGColor}{rgb}{0.90, 0.94, 0.98}
 \definecolor{MyHighlight}{rgb}{1.00, 0.89, 0.00}
 
 
 \hypersetup{breaklinks=false,%
 % pagecolor=white,%
 colorlinks=true,%
+linkcolor=MyBlue,%
+anchorcolor=MyBlue,%
 urlcolor=MyBlue}
 
 % \AtBeginDocument{
@@ -79,7 +83,7 @@ urlcolor=MyBlue}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{3pt}\scshape\raggedright\large
+  \vspace{5pt}\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -89,7 +93,7 @@ urlcolor=MyBlue}
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1: }{#2 \vspace{-2pt}}
+    \textbf{{#1:} }{#2 \vspace{-2pt}}
   }
 }
 
@@ -104,7 +108,7 @@ urlcolor=MyBlue}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {\footnotesize#2} \\
+      \textbf{\color{MyBlue} #1} & {\footnotesize#2} \\
       \textit{\footnotesize #3} & \textit{\footnotesize #4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -145,10 +149,15 @@ urlcolor=MyBlue}
 
 % \maketitle
 
-\begin{tabular*}{\textwidth\footnotesize}{l@{\extracolsep{\fill}}r}
-  \textsc{{\Large LIANA LING LI YA}} & {Email: \textbf{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}}}\\
-  {{A software engineering  student}} & {Mobile: \textbf{\href{tel:+60172801215}{+60 17-280 1215}}} \\
-  Based in Shah Alam, Selangor  & {GitHub: \textbf{\href{http://github.com/lianaling/}{github.com/lianaling}}}
+\begin{tabular*}{\textwidth\footnotesize}{ll @{\extracolsep{\fill}}r}
+  \multirow{4}{*}{
+    \begin{minipage}[l][2.0cm][c]{2.25cm}
+      \includegraphics[width=2.0cm]{profile-pic.jpg}
+    \end{minipage}}  & {\textbf{\Large LIANA LING LI YA}} & \\
+  & {{Third-year software engineering student}} & {Email: \textbf{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}}} \\
+  & \textit{37, Jalan Anggerik Aranda 31/34}, & {Mobile: \textbf{\href{tel:+60172801215}{+60 17-280 1215}}} \\
+  & \textit{Kota Kemuning, 40460 Shah Alam,} & {GitHub: \textbf{\href{http://github.com/lianaling/}{github.com/lianaling}}}\\
+  & \textit{Selangor, Malaysia.} & LinkedIn: \textbf{\href{https://linkedin.com/in/liana-ling}{linkedin.com/in/liana-ling}}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -251,14 +260,18 @@ urlcolor=MyBlue}
 \resumeSubHeadingListEnd
 
 
-%-----------Publications-----------------
-\section{PUBLICATIONS}
-Test Publication
+%-----------ACADEMIA-----------------
+\section{ACADEMIA}
+{\small
+  \begin{itemize}[leftmargin=*]{\footnotesize}
+    \item{Ling, L., Amirul Imran Ahmad Azam, Ramanathan Palaniappan, \& Tin, T.T. (2021, November 25-27) \textit{TARUC students' perception on artificial intelligence art.} [Paper presentation]. ICHESMET 2021. \vspace{-2pt}}
+  \end{itemize}
+}
 
 %-----------Achievements-----------------
 \section{ACHIEVEMENTS}
 \resumeSubHeadingListStart
-\resumeSubItem{TARUC President's List certificates}{For GPA 3.9 and above}
+\resumeSubItem{TARUC President's List certificates}{For GPA 3.9000 and above}
 \resumeSubItem{TARUC Certificate in Soft Skills}{For foundation}
 \resumeSubItem{Malaysian University English Test (MUET)}{Band 5}
 \resumeSubItem{Nanjing University Translation in Practice Online Course Certificate}{Certificate of Completion}
