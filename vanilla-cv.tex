@@ -1,11 +1,7 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% License : MIT
-%------------------------
-
+% Document Type
 \documentclass[a4paper,11pt]{article}
 
+% Packages
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -26,12 +22,13 @@
 \usepackage{setspace}
 \usepackage{multirow}
 \usepackage[hidelinks]{hyperref}
-
 \input{glyphtounicode}
 
+% Cover Information
 \title{Ling Li Ya CV}
 \author{Ling Li Ya}
 \date{\today}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -46,26 +43,14 @@
 \definecolor{MyHighlight}{rgb}{1.00, 0.89, 0.00}
 
 
+% URL
 \hypersetup{breaklinks=false,%
 % pagecolor=white,%
 colorlinks=true,%
 linkcolor=MyBlue,%
 anchorcolor=MyBlue,%
 urlcolor=MyBlue}
-
-% \AtBeginDocument{
-% \hypersetup{%
-%   colorlinks=false,
-%   urlbordercolor=black,% url borders will be red
-%   pdfborderstyle={/S/U/W 0.5}% border style will be underline of width 1pt
-% }
-% }
-
-% \makeatletter
-% \usepackage{xpatch}
-% \AtBeginDocument{
-% \apptocmd\Hy@colorlink{\strut}{}{\fail}
-% }
+\urlstyle{same}
 
 
 % Adjust margins
@@ -75,19 +60,20 @@ urlcolor=MyBlue}
 \addtolength{\topmargin}{-0.7in}
 \addtolength{\textheight}{1.0in}
 
-\urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{5pt}\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
+
 
 %-------------------------
 % Custom commands
@@ -97,6 +83,7 @@ urlcolor=MyBlue}
   }
 }
 
+
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -104,6 +91,7 @@ urlcolor=MyBlue}
       \textit{\small#3} & \textit{\footnotesize #4} \\
     \end{tabular*}\vspace{-5pt}
 }
+
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
@@ -113,25 +101,31 @@ urlcolor=MyBlue}
     \end{tabular*}\vspace{-5pt}
 }
 
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\footnotesize #1} & \textit{\footnotesize #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
+
 \renewcommand{\labelitemii}{$\circ$}
+
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 % Own symbols
 \newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
 \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 \newcommand{\mytextsharp}{$^\sharp$}
+
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,28 +133,19 @@ urlcolor=MyBlue}
 \begin{document}
 
 %----------HEADING-----------------
-% \begin{figure}[htbp]
-% \includegraphics[width=1.5cm]{profile-pic.jpg}
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%  \textbf{{\Large LIANA LING}} & Email : \href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}\\
-%  \href{http://github.com/lianaling/}{GitHub Profile} & Mobile : +60 17-280 1215 \\
-% \end{tabular*}
-% \end{figure}
-
-% \maketitle
-
 \begin{tabular*}{\textwidth\footnotesize}{ll @{\extracolsep{\fill}}r}
-  \multirow{4}{*}{
+  \multirow{5}{*}{
     \begin{minipage}[l][2.0cm][c]{2.25cm}
       \includegraphics[width=2.0cm]{profile-pic.jpg}
     \end{minipage}}  & {\textbf{\Large LIANA LING LI YA}} & \\
-  & {{Third-year software engineering student}} & {Email: \textbf{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}}} \\
-  & \textit{37, Jalan Anggerik Aranda 31/34}, & {Mobile: \textbf{\href{tel:+60172801215}{+60 17-280 1215}}} \\
-  & \textit{Kota Kemuning, 40460 Shah Alam,} & {GitHub: \textbf{\href{http://github.com/lianaling/}{github.com/lianaling}}}\\
-  & \textit{Selangor, Malaysia.} & LinkedIn: \textbf{\href{https://linkedin.com/in/liana-ling}{linkedin.com/in/liana-ling}}
+  & {\textit{Third-year software engineering student}} & {Email: \textbf{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}}} \\
+  & {37, Jalan Anggerik Aranda 31/34}, & {Mobile: \textbf{\href{tel:+60172801215}{+60 17-280 1215}}} \\
+  & {Kota Kemuning, 40460 Shah Alam,} & {GitHub: \textbf{\href{http://github.com/lianaling/}{github.com/lianaling}}}\\
+  & {Selangor, Malaysia.} & {This Document: \textbf{\href{https://github.com/lianaling/resume/blob/main/vanilla-cv.tex}{Coded with \LaTeX}}} \\
 \end{tabular*}
 
-%-----------EDUCATION-----------------
+
+%-----------Education-----------------
 \section{EDUCATION}
 \resumeSubHeadingListStart
 \resumeSubheading
@@ -178,17 +163,6 @@ urlcolor=MyBlue}
 
 
 %-----------Experience-----------------
-
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
 \section{EXPERIENCE}
 \resumeSubHeadingListStart
 \resumeSubheading
@@ -260,13 +234,14 @@ urlcolor=MyBlue}
 \resumeSubHeadingListEnd
 
 
-%-----------ACADEMIA-----------------
+%-----------Academia-----------------
 \section{ACADEMIA}
-{\small
+ {\small
   \begin{itemize}[leftmargin=*]{\footnotesize}
     \item{Ling, L., Amirul Imran Ahmad Azam, Ramanathan Palaniappan, \& Tin, T.T. (2021, November 25-27) \textit{TARUC students' perception on artificial intelligence art.} [Paper presentation]. ICHESMET 2021. \vspace{-2pt}}
   \end{itemize}
-}
+ }
+
 
 %-----------Achievements-----------------
 \section{ACHIEVEMENTS}
@@ -280,10 +255,13 @@ urlcolor=MyBlue}
 \resumeSubHeadingListEnd
 
 
-
 %-----------Activities-----------------
 \section{ACTIVITIES}
 \resumeSubHeadingListStart
+\resumeSubheading{Google \#GCPBoleh}{Google}{Self-Learning Student}{Oct 2021 -- Nov 2021}
+\resumeItemListStart
+\resumeItem{Tutorial}{Completed 5 Machine Learning and 1 BigQuery Data tutorials on GCP}
+\resumeItemListEnd
 \resumeSubheading{Google Developer Student Club TARUC}{Google}
 {Marketing \& Creative Lead}{Jan 2021 -- Oct 2021}
 \resumeItemListStart
@@ -306,17 +284,10 @@ urlcolor=MyBlue}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
+
+% -----Credits-----
+% Template: Sourabh Bajaj
+% License : MIT
