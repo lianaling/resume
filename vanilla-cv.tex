@@ -138,7 +138,7 @@ urlcolor=MyBlue}
     \begin{minipage}[l][2.0cm][c]{2.25cm}
       \includegraphics[width=2.0cm]{profile-pic.jpg}
     \end{minipage}}  & {\textbf{\Large LIANA LING LI YA}} & \\
-  & {\textit{Third-year software engineering student}} & {Email: \textbf{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}}} \\
+  & {\textit{Final-year software engineering student}} & {Email: \textbf{\href{mailto:lianalingliya@gmail.com}{lianalingliya@gmail.com}}} \\
   & {37, Jalan Anggerik Aranda 31/34}, & {Mobile: \textbf{\href{tel:+60172801215}{+60 17-280 1215}}} \\
   & {Kota Kemuning, 40460 Shah Alam,} & {GitHub: \textbf{\href{http://github.com/lianaling/}{github.com/lianaling}}}\\
   & {Selangor, Malaysia.} & {This Document: \textbf{\href{https://github.com/lianaling/resume/}{Coded with \LaTeX}}} \\
@@ -156,7 +156,7 @@ urlcolor=MyBlue}
 % \end{spacing}
 \resumeSubSubheading{Foundation in Science; CGPA: 4.0000}{Sep 2018 -- Sep 2019}
 \resumeItemListStart
-\resumeItem{Skills Learnt}{\CC, C\mytextsharp, Java, Python, ASP.NET, SQL, HTML/CSS/Javascript}
+\resumeItem{Skills Acquired}{\CC, C\mytextsharp, Java, Python, ASP.NET, SQL, HTML/CSS/Javascript}
 \resumeItem{Languages}{Proficient in written/spoken Chinese and English; Conversational in Malay}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -211,14 +211,23 @@ urlcolor=MyBlue}
 %-----------Projects-----------------
 \section{PROJECTS}
 \resumeSubHeadingListStart
-\resumeSubheading{\href{https://github.com/marcustut/fyp}{AI Automatic Slide Generator}}{Natural Language Processing}
-{Python, Jupyter Notebook, Markdown Language}{Oct 2021 -- present}
+\resumeSubheading{\href{https://github.com/marcustut/fyp}{SliGen, AI Automatic Slide Generator}}{Natural Language Processing}
+{Transformer, Python, Flask}{Oct 2021 -- Mar 2022}
 \resumeItemListStart
-\resumeItem{Algorithm Implementation}{Summarising text, converting into Markdown and generating slides}
+\resumeItem{Model Training}{Fine-tuned a HuggingFace T5 model on the ArXiV dataset for title generation}
+\resumeItem{Core Algorithm Implementation}{Summarised text using transformers, converted into Markdown and generated slides via SliDev API}
+\resumeItem{API Construction}{Constructed API interface with Flask for linking to web-based application}
 \resumeItemListEnd
 
-\resumeSubheading{\href{https://github.com/marcustut/summarize}{AI Text Summariser}}{Natural Language Processing}
-{Python, Jupyter Notebook}{Sep 2021 -- Oct 2021}
+\resumeSubheading{\href{https://github.com/lianaling/cataclysm}{Cataclysm, Cat Detector}}{Image Processing}
+{Haar Cascade Classifier, Python, Threading}{7th Mar 2022}
+\resumeItemListStart
+\resumeItem{Cat Frontal Face Detection}{Processed frames from IP camera via Android phone with haar cascade classifier}
+\resumeItem{Threading}{Started two threads to delay notifications sent via Telegram Bot API}
+\resumeItemListEnd
+
+\resumeSubheading{\href{https://github.com/marcustut/summarize}{Summarize, AI Text Summariser}}{Natural Language Processing}
+{Transformer, Python, Jupyter Notebook}{Sep 2021 -- Oct 2021}
 \resumeItemListStart
 \resumeItem{Algorithm Implementation}{Researched and applied 3 abstractive summarisation algorithms}
 \resumeItem{Algorithm Comparison}{Designed an experiment, curated relevant dataset, tested algorithms and produced a comparison report that eventually achieved 98/100 marks}
