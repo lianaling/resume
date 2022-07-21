@@ -1,6 +1,5 @@
 *
-!*.tex
+!*/*.tex
+!*/*.pdf
 !.gitignore
-*temp.tex
 !*.md
-!*.pdf
