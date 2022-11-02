@@ -4,6 +4,7 @@ Inspired by my classmate, I opted for LaTeX to construct my resume and CV becaus
 ## Environment Setup
 - [Visual Studio Code LaTeX Workshop Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 - [TexLive](https://www.tug.org/texlive/quickinstall.html)
+- [MacOS Setup](https://medium.com/@rcpassos/writing-latex-documents-in-visual-studio-code-with-latex-workshop-d9af6a6b2815)
 
 ## Template References
 - [Vanilla Template](https://github.com/sb2nov/resume)
